@@ -11,12 +11,10 @@ form.addEventListener('submit', function(event) {
   const li = document.createElement('li');
   li.textContent = taskText;
 
-  // Botão de remover
   const removeBtn = document.createElement('button');
   removeBtn.textContent = 'Remover';
   removeBtn.addEventListener('click', () => li.remove());
 
-  // Marcar como concluído
   li.addEventListener('click', () => {
     li.classList.toggle('completed');
   });
